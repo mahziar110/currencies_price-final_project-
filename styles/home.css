@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header {
+    background: rgb(44, 44, 44);
+    text-align: center;
+}
+
+body {
+    background: rgb(226, 226, 226);
+}
+
+.title {
+    color: white;
+}
+
+.digital_currencies_box {
+    background: white;
+    border: 1px solid black;
+    width: 80%;
+    margin: 2% 9% auto 9%;
+    padding: 2%;
+}
+
+.sub_header {
+    font-size: 15px;
+    color: rgb(131, 130, 130);
+}
+
+.currencies_table {
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.currencies_table th,  .currencies_table td{
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.coin_title_td {
+    direction: ltr;
+    display: flex;
+}
+
+.coin_icon {
+    width: 40px;
+    height: 4s0px;
+}
+
+.coin_name {
+    margin-left: 5px;
+}
