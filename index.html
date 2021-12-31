@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/fonts.css">
+
+    <script src="./get_prices.js"></script>
     <title>قیمت ارز</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
         <h1 class="title">قیمت ارز</h1>
     </header>
 
-    <div class="content_wrapper">
+    <div class="content_wrapper" onload="get_prices()">
         <div class="digital_currencies_box">
             <h2>ارزهای دیجیتال <span class="sub_header">(مهم ترین‌‌ها)</span></h2>
             <hr>
@@ -31,8 +33,8 @@
                         <img class="coin_icon" src="./assets/icons/BTC.png" alt="Bitcoin">
                         <span class="coin_name">Bitcoin (BTC)</span>
                     </td>
-                    <td>قیمت (تومان)</td>
-                    <td>قیمت (دلار)</td>
+                    <td id="btc_toman">قیمت (تومان)</td>
+                    <td id="btc_dollar">قیمت (دلار)</td>
                 </tr>
 
 
@@ -41,8 +43,8 @@
                         <img class="coin_icon" src="./assets/icons/ETH.png" alt="Bitcoin">
                         <span class="coin_name">Ethereum (ETH)</span>
                     </td>
-                    <td>قیمت (تومان)</td>
-                    <td>قیمت (دلار)</td>
+                    <td id="eth_toman">قیمت (تومان)</td>
+                    <td id="eth_dollar">قیمت (دلار)</td>
                 </tr>
 
                 <tr>
@@ -50,8 +52,8 @@
                         <img class="coin_icon" src="./assets/icons/USDT.png" alt="Bitcoin">
                         <span class="coin_name">Tether (USDT)</span>
                     </td>
-                    <td>قیمت (تومان)</td>
-                    <td>قیمت (دلار)</td>
+                    <td id="usdt_toman">قیمت (تومان)</td>
+                    <td id="usdt_dollar">قیمت (دلار)</td>
                 </tr>
 
                 <tr>
@@ -59,8 +61,8 @@
                         <img class="coin_icon" src="./assets/icons/DOGE.png" alt="Bitcoin">
                         <span class="coin_name">Dogecoin (DOGE)</span>
                     </td>
-                    <td>قیمت (تومان)</td>
-                    <td>قیمت (دلار)</td>
+                    <td id="usd_doge_toman">قیمت (تومان)</td>
+                    <td id="usd_doge_dollar">قیمت (دلار)</td>
                 </tr>
 
                 <tr>
@@ -68,8 +70,8 @@
                         <img class="coin_icon" src="./assets/icons/LTC.png" alt="Bitcoin">
                         <span class="coin_name">Litecoin (LTC)</span>
                     </td>
-                    <td>قیمت (تومان)</td>
-                    <td>قیمت (دلار)</td>
+                    <td id="ltc_toman">قیمت (تومان)</td>
+                    <td id="ltc_dollar">قیمت (دلار)</td>
                 </tr>
 
                 <tr>
@@ -77,8 +79,8 @@
                         <img class="coin_icon" src="./assets/icons/BNB.png" alt="Bitcoin">
                         <span class="coin_name">Binancecoin (BNB)</span>
                     </td>
-                    <td>قیمت (تومان)</td>
-                    <td>قیمت (دلار)</td>
+                    <td id="bnb_toman">قیمت (تومان)</td>
+                    <td id="bnb_dollar">قیمت (دلار)</td>
                 </tr>
 
             </table>

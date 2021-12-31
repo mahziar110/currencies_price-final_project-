@@ -45,11 +45,14 @@ body {
 .coin_title_td {
     direction: ltr;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
 }
 
 .coin_icon {
     width: 40px;
-    height: 4s0px;
+    height: 40px;
 }
 
 .coin_name {
