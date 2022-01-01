@@ -1,7 +1,6 @@
 const http = new XMLHttpRequest();
 
-// const url = "http://api.navasan.tech/latest/?api_key=freenkGNxp3Edclzu9gDbt9WrkSgUMbo"
-const url = 'https://run.mocky.io/v3/7c0bff9d-6d74-4c89-9726-15ecc8614a27';
+const url = "http://api.navasan.tech/latest/?api_key=freenkGNxp3Edclzu9gDbt9WrkSgUMbo"
 
 function set_prices(currency_id) {
     document.getElementById(`${currency_id}_toman`).innerHTML = prices[currency_id].value;
