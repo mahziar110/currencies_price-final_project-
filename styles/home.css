@@ -17,7 +17,7 @@ body {
     color: white;
 }
 
-.digital_currencies_box {
+.currencies_box {
     background: white;
     border: 1px solid black;
     width: 80%;
@@ -45,9 +45,13 @@ body {
 .coin_title_td {
     direction: ltr;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding-left: 30px;
+}
+
+.normal {
+    justify-content: center;
+    font-weight: bold;
+    padding-left: 0;
 }
 
 .coin_icon {
