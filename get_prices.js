@@ -1,6 +1,6 @@
 const http = new XMLHttpRequest();
 
-const url = "http://api.navasan.tech/latest/?api_key=freenkGNxp3Edclzu9gDbt9WrkSgUMbo"
+const url = "http://api.navasan.tech/latest/?api_key=freetXbqbSTJQnw2s0vMKZmGimmZPdq6"
 
 function set_prices(currency_id) {
     document.getElementById(`${currency_id}_toman`).innerHTML = prices[currency_id].value;
